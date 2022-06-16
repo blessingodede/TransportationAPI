@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # Hack for tests. 
 sys.path.insert(0, os.path.abspath('.'))
 
-import django_heroku
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -134,6 +134,5 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+import django_heroku
 django_heroku.settings(locals())
